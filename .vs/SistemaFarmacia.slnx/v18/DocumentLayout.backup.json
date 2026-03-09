@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|c:\\users\\marvin\\source\\repos\\sistemafarmacia\\sistemafarmacia\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|solutionrelative:sistemafarmacia\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|c:\\users\\marvin\\source\\repos\\sistemafarmacia\\sistemafarmacia\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|solutionrelative:sistemafarmacia\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|c:\\users\\marvin\\source\\repos\\sistemafarmacia\\sistemafarmacia\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|solutionrelative:sistemafarmacia\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|c:\\users\\marvin\\source\\repos\\sistemafarmacia\\sistemafarmacia\\views\\proveedores\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|solutionrelative:sistemafarmacia\\views\\proveedores\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|c:\\users\\marvin\\source\\repos\\sistemafarmacia\\sistemafarmacia\\data\\farmaciacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8AD580D-F311-E567-2485-ACBE0BD1E989}|SistemaFarmacia\\SistemaFarmacia.csproj|solutionrelative:sistemafarmacia\\data\\farmaciacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Views\\Proveedores\\Create.cshtml",
+              "RelativeDocumentMoniker": "SistemaFarmacia\\Views\\Proveedores\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Views\\Proveedores\\Create.cshtml",
+              "RelativeToolTip": "SistemaFarmacia\\Views\\Proveedores\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-04T18:00:12.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProveedoresController.cs",
+              "DocumentMoniker": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Controllers\\ProveedoresController.cs",
+              "RelativeDocumentMoniker": "SistemaFarmacia\\Controllers\\ProveedoresController.cs",
+              "ToolTip": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Controllers\\ProveedoresController.cs",
+              "RelativeToolTip": "SistemaFarmacia\\Controllers\\ProveedoresController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T17:52:23.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FarmaciaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Data\\FarmaciaContext.cs",
+              "RelativeDocumentMoniker": "SistemaFarmacia\\Data\\FarmaciaContext.cs",
+              "ToolTip": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Data\\FarmaciaContext.cs",
+              "RelativeToolTip": "SistemaFarmacia\\Data\\FarmaciaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T17:43:37.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "SistemaFarmacia\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Models\\Producto.cs",
+              "RelativeToolTip": "SistemaFarmacia\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T17:33:20.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Models\\Proveedor.cs",
+              "RelativeDocumentMoniker": "SistemaFarmacia\\Models\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\Marvin\\source\\repos\\SistemaFarmacia\\SistemaFarmacia\\Models\\Proveedor.cs",
+              "RelativeToolTip": "SistemaFarmacia\\Models\\Proveedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T17:29:23.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
