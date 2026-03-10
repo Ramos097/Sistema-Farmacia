@@ -1,0 +1,35 @@
+## Carpetas de Visual Studio
+.vs/
+.vscode/
+
+## Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Carpetas de compilación
+bin/
+obj/
+Debug/
+Release/
+
+## Archivos temporales
+*.log
+*.cache
+*.tmp
+
+## Archivos de IIS Express
+.vs/config/
+
+## Publicaciones
+publish/
+*.pubxml
+*.publishproj
+
+## Node (si usas librerías frontend)
+node_modules/
+
+## Archivos del sistema
+.DS_Store
+Thumbs.db
