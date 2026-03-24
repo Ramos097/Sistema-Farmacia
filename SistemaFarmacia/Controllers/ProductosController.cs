@@ -20,9 +20,21 @@ namespace SistemaFarmacia.Controllers
         }
 
         // GET: Productos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string buscar)
         {
-            return View(await _context.Productos.ToListAsync());
+            var productos = _context.Productos
+                .Include(p => p.Proveedor)
+                .Include(p => p.Categoria)
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(buscar))
+            {
+                productos = productos.Where(p =>
+                    p.Nombre.Contains(buscar) ||
+                    p.Descripcion.Contains(buscar));
+            }
+
+            return View(await productos.ToListAsync());
         }
 
         // GET: Productos/Details/5
@@ -47,15 +59,13 @@ namespace SistemaFarmacia.Controllers
         public IActionResult Create()
         {
             ViewData["ProveedorId"] = new SelectList(_context.Proveedores, "Id", "Nombre");
+            ViewData["CategoriaId"] = new SelectList(_context.Categorias, "Id", "Nombre");
             return View();
         }
 
-        // POST: Productos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost] 
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Descripcion,PrecioCompra,PrecioVenta,Stock,Activo")] Producto producto)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Descripcion,PrecioCompra,PrecioVenta,Stock,Activo,ProveedorId,CategoriaId")] Producto producto)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +73,9 @@ namespace SistemaFarmacia.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["ProveedorId"] = new SelectList(_context.Proveedores, "Id", "Nombre", producto.ProveedorId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categorias, "Id", "Nombre", producto.CategoriaId);
             return View(producto);
         }
 

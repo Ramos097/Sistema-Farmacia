@@ -337,3 +337,4 @@ C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\r
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\SistemaFarmacia.sourcelink.json

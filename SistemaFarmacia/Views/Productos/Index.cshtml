@@ -9,6 +9,12 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-action="Index" method="get">
+    <p>
+        Buscar: <input type="text" name="buscar" class="form-control" style="width:200px; display:inline;" />
+        <input type="submit" value="Buscar" class="btn btn-primary" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -25,7 +31,13 @@
                 @Html.DisplayNameFor(model => model.PrecioVenta)
             </th>
             <th>
+                Proveedor
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Stock)
+            </th>
+            <th>
+                Categoría
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Activo)
@@ -34,7 +46,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model) { 
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
@@ -48,9 +60,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.PrecioVenta)
             </td>
+                <td>
+                    @(item.Proveedor?.Nombre)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Stock)
             </td>
+                <td>
+                    @(item.Categoria?.Nombre)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Activo)
             </td>
