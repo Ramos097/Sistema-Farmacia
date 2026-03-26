@@ -1,0 +1,34 @@
+﻿<h2>Factura</h2>
+
+<p>@ViewBag.Mensaje</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.Detalle != null)
+        {
+            foreach (var item in (List<ItemVenta>)ViewBag.Detalle)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Cantidad</td>
+                    <td>@item.Precio.ToString("N2")</td>
+                    <td>@item.Subtotal.ToString("N2")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<h3>Total: ₡ @ViewBag.Total</h3>
+
+<br />
+
+<a href="/Ventas/NuevaVenta" class="btn btn-primary">Nueva Venta</a>
