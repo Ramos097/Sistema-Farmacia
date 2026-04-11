@@ -1,13 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SistemaFarmacia.Data;
 using SistemaFarmacia.Models;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace SistemaFarmacia.Controllers
 {
     public class VentasController : Controller
     {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (HttpContext.Session.GetString("Usuario") == null)
+            {
+                context.Result = RedirectToAction("Login", "Account");
+            }
+        }
+
         private readonly FarmaciaContext _context;
         private static List<ItemVenta> carrito = new List<ItemVenta>();
 
@@ -107,31 +117,51 @@ namespace SistemaFarmacia.Controllers
         [HttpPost]
         public async Task<IActionResult> AgregarProducto(int ProductoId, int Cantidad)
         {
+            // ❌ Validar producto
+            if (ProductoId == 0)
+            {
+                TempData["Error"] = "Debe seleccionar un producto";
+                return RedirectToAction("NuevaVenta");
+            }
+
+            // ❌ Validar cantidad
+            if (Cantidad <= 0)
+            {
+                TempData["Error"] = "La cantidad debe ser mayor a 0";
+                return RedirectToAction("NuevaVenta");
+            }
+
             var producto = await _context.Productos.FindAsync(ProductoId);
 
-            if (producto == null || producto.Stock < Cantidad)
+            if (producto == null)
             {
-                TempData["Error"] = "No hay suficiente stock de este producto";
+                TempData["Error"] = "Producto no existe";
                 return RedirectToAction("NuevaVenta");
             }
 
             // 🔍 Buscar si ya existe en el carrito
             var itemExistente = carrito.FirstOrDefault(x => x.ProductoId == ProductoId);
 
+            int cantidadTotal = Cantidad;
+
             if (itemExistente != null)
             {
-                // Validar stock total
-                if (producto.Stock < itemExistente.Cantidad + Cantidad)
-                {
-                    return Content("Stock insuficiente para esa cantidad total");
-                }
+                cantidadTotal += itemExistente.Cantidad;
+            }
 
-                // Sumar cantidad
+            // ❌ Validar stock total
+            if (producto.Stock < cantidadTotal)
+            {
+                TempData["Error"] = $"Stock insuficiente. Disponible: {producto.Stock}";
+                return RedirectToAction("NuevaVenta");
+            }
+
+            if (itemExistente != null)
+            {
                 itemExistente.Cantidad += Cantidad;
             }
             else
             {
-                // Crear nuevo item
                 var item = new ItemVenta
                 {
                     ProductoId = producto.Id,
@@ -142,6 +172,8 @@ namespace SistemaFarmacia.Controllers
 
                 carrito.Add(item);
             }
+
+            TempData["Success"] = "Producto agregado al carrito";
 
             return RedirectToAction("NuevaVenta");
         }

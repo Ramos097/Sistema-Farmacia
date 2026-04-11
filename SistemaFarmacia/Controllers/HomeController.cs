@@ -1,11 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using SistemaFarmacia.Models;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace SistemaFarmacia.Controllers
 {
     public class HomeController : Controller
     {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (HttpContext.Session.GetString("Usuario") == null)
+            {
+                context.Result = RedirectToAction("Login", "Account");
+            }
+        }
         public IActionResult Index()
         {
             return View();

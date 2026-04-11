@@ -15,5 +15,6 @@ namespace SistemaFarmacia.Data
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<DetalleVenta> DetallesVenta { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

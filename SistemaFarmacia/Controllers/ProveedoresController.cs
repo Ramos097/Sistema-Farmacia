@@ -7,11 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SistemaFarmacia.Data;
 using SistemaFarmacia.Models;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace SistemaFarmacia.Controllers
 {
     public class ProveedoresController : Controller
     {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (HttpContext.Session.GetString("Usuario") == null)
+            {
+                context.Result = RedirectToAction("Login", "Account");
+            }
+        }
         private readonly FarmaciaContext _context;
 
         public ProveedoresController(FarmaciaContext context)

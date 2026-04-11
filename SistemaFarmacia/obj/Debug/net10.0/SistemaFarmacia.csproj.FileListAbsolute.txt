@@ -147,7 +147,6 @@ C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\r
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\scopedcss\bundle\SistemaFarmacia.styles.css
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\scopedcss\projectbundle\SistemaFarmacia.bundle.scp.css
-C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\kyfbp12ttg-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\6pniolb57q-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\0wboffo2j9-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\gm587m5w98-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -209,8 +208,6 @@ C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\c
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\vxc1w7af0s-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\c2zxo8ott7-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\3pm3r57wv5-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\m57778fvyo-{0}-xo6fow15ue-xo6fow15ue.gz
-C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\0tezouxcy0-{0}-xo6fow15ue-xo6fow15ue.gz
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\staticwebassets.development.json
@@ -338,3 +335,6 @@ C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\t
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\SistemaFarmacia.sourcelink.json
+C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\m57778fvyo-{0}-sa0jodd741-sa0jodd741.gz
+C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\0tezouxcy0-{0}-sa0jodd741-sa0jodd741.gz
+C:\Users\Marvin\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\net10.0\compressed\kyfbp12ttg-{0}-phpnsdca1b-phpnsdca1b.gz

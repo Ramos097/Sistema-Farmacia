@@ -1,8 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
+<div class="dashboard">
+    @if (Context.Session.GetString("Usuario") != null)
+    {
+        <h4>Bienvenido @Context.Session.GetString("Usuario")</h4>
+    }
+    <h1>Sistema Farmacia</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Gestiona ventas, productos y categorías desde el menú superior.</p>
+
+    <a asp-controller="Ventas" asp-action="NuevaVenta" class="btn btn-verde">
+        Nueva Venta
+    </a>
 </div>
